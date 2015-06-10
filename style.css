@@ -1,6 +1,15 @@
 body {
+  position: absolute;
   background-color: black;
+  color: white;
 }
-#player {
-  width: 40%;
+
+.todayShow {
+
+}
+
+.currentTime {
+  position: absolute;
+  width: 100%;
+  float: right;
 }
