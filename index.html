@@ -1,22 +1,23 @@
 <html lang="en" ng-app="clientApp" ng-controller="clientController">
   <head>
-    <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.17/angular.min.js"></script>
     <script src="client/client.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <title> Bunny Page </title>
   </head>
   <body>
-    <div class="currentTime">
-      {{date | date:'yyyy-MM-dd'}}
+    <div class="row currentTime">
+      {{date | date:'medium'}}
     </div>
     <!-- bunny picture of the day -->
-    <div class="bunnyPic">
-      <img ng-src="{{picture}}"/>
+    <div class="row bunnyPic">
+    
     </div>
     <!-- todays show current player -->
-    <div class="todayShow">
-      {{player}}
+    <div class="row todayShow">
+      <iframe src="https://www.spreaker.com/embed/player/standard?episode_id=6197550" style="width: 100%; height: 100%;" frameborder="0" scrolling="no"/>
     </div>
   </body>
 </html>
